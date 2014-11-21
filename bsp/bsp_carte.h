@@ -117,18 +117,15 @@ typedef enum {
 	CONSOLE_TX,
 	CONSOLE_RX,
 
-	/* Pin Camera */
-	BROCHE_CLK,
-
 	/* Leds Discovery Board */
-	PIN_SERVO_DRIECTION,
+	PIN_PWM_MICRO_SERVO,
 
 	/* Bouton Poussoir */
 	BTN_WKP,
 
-
-	/* ADC */
-	Potentiometre_1,
+	/* UltraSon */
+	Pin_UltraSon_Trig,
+	Pin_UltraSon_Echo,
 
 	nb_GPIO,
 
@@ -171,15 +168,14 @@ const static Mapping_GPIO_s Mapping_GPIO[nb_GPIO] = {
 /** CONSOLE_TX			*/	{ 	GPIOC,		GPIO_Pin_6,		GPIO_Mode_AF,		FALSE,		GPIO_Speed_50MHz,		GPIO_OType_PP,			GPIO_PuPd_NOPULL,		GPIO_AF_USART6,			NULL,			Interrupt_OFF,		NULL,				(uint32_t) USART6	},
 /** CONSOLE_RX  		*/	{ 	GPIOC,		GPIO_Pin_7,		GPIO_Mode_AF,		FALSE,		GPIO_Speed_50MHz,		GPIO_OType_PP,			GPIO_PuPd_NOPULL,		GPIO_AF_USART6,			NULL,			Interrupt_OFF,		NULL,				(uint32_t) USART6	},
 /** ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
-/** Broche_CLK  		*/	{ 	GPIOA,		GPIO_Pin_3,		GPIO_Mode_AF,		FALSE,		GPIO_Speed_50MHz,		GPIO_OType_PP,			GPIO_PuPd_NOPULL,		GPIO_AF_TIM2,			TIM_Channel_4,		Interrupt_OFF,		ETAT_INACTIF,			(uint32_t) TIM2		},
 /** ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
-/** PIN_SERVO_DRIECTION  	*/	{ 	GPIOD,		GPIO_Pin_15,		GPIO_Mode_AF,		FALSE,		GPIO_Speed_50MHz,		GPIO_OType_PP,			GPIO_PuPd_NOPULL,		GPIO_AF_TIM4,			TIM_Channel_4,		Interrupt_OFF,		ETAT_INACTIF,			(uint32_t) TIM4		},
+/** PIN_PWM_MICRO_SERVO  	*/	{ 	GPIOD,		GPIO_Pin_15,		GPIO_Mode_AF,		FALSE,		GPIO_Speed_50MHz,		GPIO_OType_PP,			GPIO_PuPd_NOPULL,		GPIO_AF_TIM4,			TIM_Channel_4,		Interrupt_OFF,		ETAT_INACTIF,			(uint32_t) TIM4		},
 /** ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /** BTN_WKP			*/	{	GPIOA,		GPIO_Pin_0,		GPIO_Mode_IN,		FALSE,		GPIO_Speed_2MHz,		NULL,				GPIO_PuPd_NOPULL,		NULL,				NULL,			NULL,			ETAT_INACTIF,			NULL			},
 /** ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
-/** Potentiometre_1		*/	{	GPIOC,		GPIO_Pin_1,		GPIO_Mode_AN,		FALSE,		GPIO_Speed_2MHz,		NULL,				GPIO_PuPd_NOPULL,		NULL,				ADC_Channel_11,		Interrupt_ON,		ETAT_INACTIF,			(uint32_t) ADC1		},
+/** Pin_UltraSon_Trig  		*/	{ 	GPIOA,		GPIO_Pin_3,		GPIO_Mode_AF,		FALSE,		GPIO_Speed_50MHz,		GPIO_OType_PP,			GPIO_PuPd_NOPULL,		GPIO_AF_TIM2,			TIM_Channel_4,		Interrupt_ON,		ETAT_INACTIF,			(uint32_t) TIM2		},
+/** UltraSon_Echo		*/	{	GPIOC,		GPIO_Pin_1,		GPIO_Mode_AN,		FALSE,		GPIO_Speed_2MHz,		NULL,				GPIO_PuPd_NOPULL,		NULL,				ADC_Channel_11,		Interrupt_ON,		ETAT_INACTIF,			(uint32_t) ADC1		},
 /** ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
-
 };
 
 

@@ -1,34 +1,27 @@
 /*********************************************************************
  * *******************************************************************
  *
- * @file	app_AffDebug.h
+ * @file	drv_TimBase.h
  *
  * @author	Duclos Timothe
  *
- * @date	30/09/2014
+ * @date	21/11/2014
  *
- * @brief	Gestion de l'affichage console
+ * @brief	Driver gestion TimBase
  *
  *********************************************************************/
 
-#ifndef TEMPLATE_H
-#define TEMPLATE_H
+#ifndef DRV_TIMBASE_H
+#define DRV_TIMBASE_H
 
 /********************************************************************
  * Includes
  */
-#include "util_TSW.h"
-#include "BSP/bsp_BoutonPoussoir.h"
-#include "equ_ServoDirection.h"
-#include "equ_UltraSon.h"
-#include "config.h"
-
-#ifdef MODE_DEBUG_ON
+#include "BSP_carte.h"
 
 /********************************************************************
  * Exported defines
  */
-#define	NB_TOURBOUCLE_ECHANTILLON	2000
 
 /********************************************************************
  * Exported variables
@@ -37,36 +30,15 @@
 /********************************************************************
  * Exported types
  */
-typedef enum {
 
-	Affichage_Initialisation = 0,
-	Affichage_DataPinAndValue,
-
-}Etape_Affichage_e;
 
 /********************************************************************
  * Exported Function
  */
-
-/**------------------------------------------------------------------
- *
- * @brief	Gestion de l'affichage Debug
- *
- */
-void
-Affichage_Main (
-		void
+void TimeBase_init(
+	Mapping_GPIO_e	IdPinPwm,			/**<[in] ID de la Pin ou générer la PWM*/
+	uint32_t 	TIM_Periode,		/**<[in] Periode de comptage */
+	uint32_t 	TIM_Prescaler 		/**<[in] Prescaler du TimeBase */
 );
 
-/**------------------------------------------------------------------
- *
- * @brief	Setter la duree du tour de boucle
- *
- */
-void
-setDureeTourBoucle(
-	void
-);
-
-#endif
 #endif

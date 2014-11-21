@@ -34,15 +34,15 @@
  */
 typedef enum {
 
-	ServoDirection_Position_moins90	= 0,
-	ServoDirection_Position_moins45,
+	MicroServo_Position_moins90	= 0,
+	MicroServo_Position_moins45,
 
-	ServoDirection_Position_zero,
+	MicroServo_Position_zero,
 
-	ServoDirection_Position_plus45,
-	ServoDirection_Position_plus90,
+	MicroServo_Position_plus45,
+	MicroServo_Position_plus90,
 
-	nb_ServoDirection_Positions
+	nb_MicroServo_Positions
 
 }ServoDirection_ListePosition_e;
 
@@ -55,7 +55,7 @@ typedef enum {
  *
  */
 void
-ServoDirection_Main(
+MicroServo_Main(
 		void
 );
 
@@ -65,7 +65,7 @@ ServoDirection_Main(
  *
  */
 void
-ServoDirection_SetNewPosition(
+MicroServo_SetNewPosition(
 		ServoDirection_ListePosition_e	Position	/**<[in] Nouvelle position a adopter */
 );
 
@@ -75,7 +75,7 @@ ServoDirection_SetNewPosition(
  *
  */
 ServoDirection_ListePosition_e
-ServoDirection_GetPosition(
+MicroServo_GetPosition(
 		void
 );
 
@@ -85,7 +85,7 @@ ServoDirection_GetPosition(
  *
  */
 void
-ServoDirection_toString(
+MicroServo_toString(
 
 		toString_Possibilities_e	Field,
 		Mapping_GPIO_e 			IDMapping,

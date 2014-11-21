@@ -23,29 +23,29 @@
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="equ_ServoDirection.c" partName="equ_ServoDirection.c" path="C:/CooCox/CoIDE/workspace/OpenBox/equ/equ_ServoDirection.c" title="equ_ServoDirection.c" tooltip="C:/CooCox/CoIDE/workspace/OpenBox/equ/equ_ServoDirection.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenBox/equ/equ_ServoDirection.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="466" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="equ_UltraSon.c" partName="equ_UltraSon.c" path="C:/CooCox/CoIDE/workspace/OpenBox/equ/equ_UltraSon.c" title="equ_UltraSon.c" tooltip="C:/CooCox/CoIDE/workspace/OpenBox/equ/equ_UltraSon.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenBox/equ/equ_UltraSon.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="1324" selectionOffset="0" selectionTopPixel="262"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="equ_UltraSon.h" partName="equ_UltraSon.h" path="C:/CooCox/CoIDE/workspace/OpenBox/equ/equ_UltraSon.h" title="equ_UltraSon.h" tooltip="C:/CooCox/CoIDE/workspace/OpenBox/equ/equ_UltraSon.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenBox/equ/equ_UltraSon.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="973" selectionOffset="0" selectionTopPixel="7"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="app_GestionOuverture.h" partName="app_GestionOuverture.h" path="C:/CooCox/CoIDE/workspace/OpenBox/app/app_GestionOuverture.h" title="app_GestionOuverture.h" tooltip="C:/CooCox/CoIDE/workspace/OpenBox/app/app_GestionOuverture.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenBox/app/app_GestionOuverture.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="20" selectionOffset="157" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="app_GestionOuverture.c" partName="app_GestionOuverture.c" path="C:/CooCox/CoIDE/workspace/OpenBox/app/app_GestionOuverture.c" title="app_GestionOuverture.c" tooltip="C:/CooCox/CoIDE/workspace/OpenBox/app/app_GestionOuverture.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenBox/app/app_GestionOuverture.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="177" selectionTopPixel="0"/>
+</editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/CooCox/CoIDE/workspace/OpenBox/app/main.c" title="main.c" tooltip="C:/CooCox/CoIDE/workspace/OpenBox/app/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenBox/app/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="534" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="bsp_carte.c" partName="bsp_carte.c" path="C:/CooCox/CoIDE/workspace/OpenBox/bsp/bsp_carte.c" title="bsp_carte.c" tooltip="C:/CooCox/CoIDE/workspace/OpenBox/bsp/bsp_carte.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenBox/bsp/bsp_carte.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="425" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="bsp_carte.h" partName="bsp_carte.h" path="C:/CooCox/CoIDE/workspace/OpenBox/bsp/bsp_carte.h" title="bsp_carte.h" tooltip="C:/CooCox/CoIDE/workspace/OpenBox/bsp/bsp_carte.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenBox/bsp/bsp_carte.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="956" selectionTopPixel="420"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="app_AffDebug.h" partName="app_AffDebug.h" path="C:/CooCox/CoIDE/workspace/OpenBox/app/app_AffDebug.h" title="app_AffDebug.h" tooltip="C:/CooCox/CoIDE/workspace/OpenBox/app/app_AffDebug.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenBox/app/app_AffDebug.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="543" selectionTopPixel="22"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="bsp_BoutonPoussoir.h" partName="bsp_BoutonPoussoir.h" path="C:/CooCox/CoIDE/workspace/OpenBox/bsp/bsp_BoutonPoussoir.h" title="bsp_BoutonPoussoir.h" tooltip="C:/CooCox/CoIDE/workspace/OpenBox/bsp/bsp_BoutonPoussoir.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenBox/bsp/bsp_BoutonPoussoir.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="1083" selectionTopPixel="525"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="app_AffDebug.c" partName="app_AffDebug.c" path="C:/CooCox/CoIDE/workspace/OpenBox/app/app_AffDebug.c" title="app_AffDebug.c" tooltip="C:/CooCox/CoIDE/workspace/OpenBox/app/app_AffDebug.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenBox/app/app_AffDebug.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4602" selectionTopPixel="2190"/>
+<editorState selectionHorizontalPixel="0" selectionLength="25" selectionOffset="511" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="equ_ServoDirection.h" partName="equ_ServoDirection.h" path="C:/CooCox/CoIDE/workspace/OpenBox/equ/equ_ServoDirection.h" title="equ_ServoDirection.h" tooltip="C:/CooCox/CoIDE/workspace/OpenBox/equ/equ_ServoDirection.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OpenBox/equ/equ_ServoDirection.h"/>
@@ -65,7 +65,15 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/OpenBox"/>
+<element path="/OpenBox/app"/>
+<element path="/OpenBox/bsp"/>
+<element path="/OpenBox/equ"/>
+<element path="/OpenBox/util"/>
+<element path="/OpenBox/util/stdio"/>
 </expanded>
+<selection>
+<element path="/OpenBox/app/main.c"/>
+</selection>
 </viewState>
 </view>
 <view id="org.coocox.component.ui.ComponentView" partName="Components">
@@ -93,7 +101,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspectives activePart="org.coocox.component.ui.Help" activePerspective="org.coocox.builder.perspective.CoBuilder">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
@@ -155,7 +163,7 @@
 </presentation>
 </folder>
 </info>
-<info part="org.coocox.builder.ui.exampleView" ratio="0.21959096" ratioLeft="408" ratioRight="1450" relationship="2" relative="org.eclipse.ui.internal.ViewStack@173287"/>
+<info part="org.coocox.builder.ui.exampleView" ratio="0.18072289" ratioLeft="345" ratioRight="1564" relationship="2" relative="org.eclipse.ui.internal.ViewStack@173287"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@68c025" ratio="0.72" ratioLeft="1044" ratioRight="406" relationship="2" relative="org.coocox.builder.ui.exampleView">
 <folder activePageID="org.coocox.component.ui.Help" appearance="2" expanded="2">
 <page content="org.coocox.component.ui.Help" label="Help"/>
@@ -222,8 +230,8 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.coocox.builder.ui.build"/>
 <hide_toolbar_item_id id="org.coocox.welcome.ui.action.welcome"/>
-<hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
 <hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
+<hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
@@ -231,44 +239,62 @@
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
-<fastViewBars>&#x0A;<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@6074b1" orientation="512" selectedTabId="org.coocox.builder.ui.views.ProjectView" style="0">&#x0A;<fastViews>&#x0A;<view id="org.coocox.builder.ui.views.ProjectView" ratio="0.3"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@6074b1" orientation="512" selectedTabId="org.coocox.builder.ui.views.ProjectView" style="0">
+<fastViews>
+<view id="org.coocox.builder.ui.views.ProjectView" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
 </fastViewBars>
 <viewLayoutRec closeable="false" id="org.eclipse.debug.ui.DebugView"/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@6074b1">&#x0A;<folder appearance="2" expanded="0">&#x0A;<page content="org.coocox.builder.ui.views.ProjectView" label="LabelNotFound"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@6074b1">
+<folder appearance="2" expanded="0">
+<page content="org.coocox.builder.ui.views.ProjectView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.74960214" ratioLeft="1413" ratioRight="472" relationship="2" relative="org.eclipse.ui.internal.ViewStack@6074b1">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.74960214" ratioLeft="1413" ratioRight="472" relationship="2" relative="org.eclipse.ui.internal.ViewStack@6074b1">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@17dcb96" ratio="0.6996805" ratioLeft="657" ratioRight="282" relationship="4" relative="org.eclipse.ui.internal.ViewStack@6074b1">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@17dcb96" ratio="0.6996805" ratioLeft="657" ratioRight="282" relationship="4" relative="org.eclipse.ui.internal.ViewStack@6074b1">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@58ed9a" ratio="0.49973476" ratioLeft="942" ratioRight="943" relationship="2" relative="org.eclipse.ui.internal.ViewStack@17dcb96">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@58ed9a" ratio="0.49973476" ratioLeft="942" ratioRight="943" relationship="2" relative="org.eclipse.ui.internal.ViewStack@17dcb96">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@575836" ratio="0.74960214" ratioLeft="1413" ratioRight="472" relationship="2" relative="org.eclipse.ui.internal.ViewStack@6074b1">&#x0A;<folder activePageID="org.eclipse.cdt.dsf.debug.ui.disassembly.view" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="Disassembly"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@575836" ratio="0.74960214" ratioLeft="1413" ratioRight="472" relationship="2" relative="org.eclipse.ui.internal.ViewStack@6074b1">
+<folder activePageID="org.eclipse.cdt.dsf.debug.ui.disassembly.view" appearance="2" expanded="2">
+<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="Disassembly"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.coocox.coassistant.view.CoAssistantView_debug" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -280,175 +306,171 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Rover_2014/app/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Rover_2014/equ/equ_ServoDirection.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Rover_2014/bsp/bsp_carte.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Rover_2014/equ/equ_ServoDirection.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Rover_2014/bsp/config.h"/>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage">
-<org.coocox.welcome.ui.WelcomePage/>
-</editor>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/cmsis_lib/include/stm32f4xx_pwr.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/cmsis_boot/stm32f4xx.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/cmsis_lib/source/stm32f4xx_pwr.c"/>
-<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
-<subPage/>
-</editor>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/app/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/bsp/bsp_carte.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/bsp/bsp_carte.h"/>
-<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
-<subPage/>
-</editor>
-<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
-<subPage/>
-</editor>
-<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
-<subPage/>
-</editor>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/app/app_AffDebug.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/bsp/bsp_BoutonPoussoir.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/app/app_AffDebug.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/bsp/bsp_carte.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/bsp/bsp_carte.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/drv/drv_USART.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/app/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/drv/cmsis_boot/startup/startup_stm32f4xx.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/bsp/config.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/util/stdio/printf.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/drv/drv_GPIO.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/equ/equ_UltraSon.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/equ/equ_UltraSon.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/equ/equ_ServoDirection.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/equ/equ_ServoDirection.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/app/app_GestionOuverture.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/app/app_GestionOuverture.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/OpenBox/app/main.c"/>
 </editors>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1165" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="983" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1367" y="0"/>
+<item historyLabel="startup_stm32f4xx.c" index="4">
+<position info="not_deleted" x="21048" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="791" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="983" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="791" y="0"/>
+<item historyLabel="drv_USART.c" index="2">
+<position info="not_deleted" x="4688" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1073" y="0"/>
+<item historyLabel="startup_stm32f4xx.c" index="4">
+<position info="not_deleted" x="14795" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1151" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1622" y="14"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1165" y="0"/>
+<item historyLabel="app_AffDebug.c" index="1">
+<position info="not_deleted" x="4547" y="23"/>
 </item>
-<item historyLabel="equ_ServoDirection.h" index="1">
-<position info="not_deleted" x="1549" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="794" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2513" y="0"/>
-</item>
-<item historyLabel="equ_ServoDirection.h" index="1">
-<position info="not_deleted" x="1557" y="29"/>
-</item>
-<item historyLabel="bsp_carte.h" index="2">
-<position info="not_deleted" x="3926" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2615" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position/>
-</item>
-<item historyLabel="equ_ServoDirection.h" index="1">
-<position info="not_deleted" x="945" y="31"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1325" y="0"/>
-</item>
-<item historyLabel="equ_ServoDirection.h" index="1">
-<position info="not_deleted" x="1403" y="0"/>
-</item>
-<item historyLabel="equ_ServoDirection.c" index="3">
-<position info="not_deleted" x="2910" y="19"/>
-</item>
-<item historyLabel="config.h" index="4">
-<position info="not_deleted" x="1656" y="0"/>
-</item>
-<item historyLabel="config.h" index="4">
-<position info="not_deleted" x="1257" y="0"/>
-</item>
-<item historyLabel="welcome" index="5"/>
-<item historyLabel="stm32f4xx_pwr.h" index="6">
-<position info="not_deleted" x="1332" y="9"/>
-</item>
-<item historyLabel="stm32f4xx.h" index="7">
+<item historyLabel="printf.c" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_pwr.h" index="6">
-<position info="not_deleted" x="1665" y="0"/>
+<item historyLabel="printf.c" index="6">
+<position info="not_deleted" x="490" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_pwr.c" index="8">
-<position info="not_deleted" x="8598" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1639" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_pwr.h" index="6">
-<position info="not_deleted" x="1665" y="0"/>
+<item historyLabel="app_AffDebug.c" index="1">
+<position info="not_deleted" x="4434" y="19"/>
 </item>
-<item historyLabel="Repository" index="9"/>
-<item historyLabel="welcome" index="5"/>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="drv_GPIO.c" index="7">
+<position info="not_deleted" x="3777" y="19"/>
 </item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="956" y="8"/>
+<item historyLabel="drv_GPIO.c" index="7">
+<position info="not_deleted" x="4332" y="0"/>
 </item>
-<item historyLabel="bsp_carte.c" index="11">
-<position info="not_deleted" x="1705" y="8"/>
+<item historyLabel="drv_GPIO.c" index="7">
+<position info="not_deleted" x="4845" y="0"/>
 </item>
-<item historyLabel="bsp_carte.h" index="12">
-<position info="not_deleted" x="530" y="0"/>
+<item historyLabel="bsp_carte.h" index="0">
+<position info="not_deleted" x="2374" y="15"/>
 </item>
-<item historyLabel="Repository" index="13"/>
-<item historyLabel="bsp_carte.h" index="12">
-<position info="not_deleted" x="789" y="0"/>
+<item historyLabel="app_AffDebug.c" index="1">
+<position info="not_deleted" x="4434" y="19"/>
 </item>
-<item historyLabel="Repository" index="14"/>
-<item historyLabel="bsp_carte.h" index="12">
-<position info="not_deleted" x="552" y="0"/>
+<item historyLabel="app_AffDebug.c" index="1">
+<position info="not_deleted" x="4456" y="0"/>
 </item>
-<item historyLabel="Repository" index="15"/>
-<item historyLabel="bsp_carte.h" index="12">
-<position info="not_deleted" x="531" y="0"/>
+<item historyLabel="config.h" index="5">
+<position info="not_deleted" x="932" y="0"/>
 </item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="956" y="8"/>
+<item historyLabel="bsp_carte.h" index="0">
+<position info="not_deleted" x="5227" y="0"/>
 </item>
-<item historyLabel="bsp_carte.h" index="12">
-<position info="not_deleted" x="530" y="0"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="1639" y="0"/>
 </item>
-<item historyLabel="app_AffDebug.h" index="16">
-<position info="not_deleted" x="543" y="0"/>
+<item historyLabel="equ_UltraSon.c" index="8">
+<position info="not_deleted" x="1324" y="0"/>
 </item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="1893" y="10"/>
+<item historyLabel="equ_UltraSon.h" index="9">
+<position info="not_deleted" x="973" y="0"/>
 </item>
-<item historyLabel="bsp_BoutonPoussoir.h" index="17">
-<position info="not_deleted" x="1083" y="10"/>
+<item historyLabel="equ_ServoDirection.c" index="10">
+<position info="not_deleted" x="0" y="2902"/>
 </item>
-<item historyLabel="app_AffDebug.c" index="18">
-<position info="not_deleted" x="2495" y="0"/>
+<item historyLabel="equ_UltraSon.h" index="9">
+<position info="not_deleted" x="973" y="0"/>
 </item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="486" y="18"/>
+<item historyLabel="equ_UltraSon.c" index="8">
+<position info="not_deleted" x="1324" y="0"/>
 </item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="534" y="0"/>
+<item historyLabel="equ_ServoDirection.c" index="10">
+<position info="not_deleted" x="0" y="2902"/>
 </item>
-<item historyLabel="app_AffDebug.c" index="18">
-<position info="not_deleted" x="4013" y="0"/>
+<item historyLabel="equ_ServoDirection.h" index="11">
+<position info="not_deleted" x="0" y="2165"/>
 </item>
-<item historyLabel="bsp_carte.c" index="19">
-<position info="not_deleted" x="1705" y="8"/>
+<item historyLabel="equ_UltraSon.h" index="9">
+<position info="not_deleted" x="973" y="0"/>
 </item>
-<item historyLabel="bsp_carte.h" index="20">
-<position info="not_deleted" x="530" y="0"/>
+<item historyLabel="equ_UltraSon.c" index="8">
+<position info="not_deleted" x="157" y="12"/>
 </item>
-<item active="true" historyLabel="bsp_carte.h" index="20">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="equ_UltraSon.h" index="9">
+<position info="not_deleted" x="169" y="0"/>
+</item>
+<item historyLabel="equ_ServoDirection.h" index="11">
+<position info="not_deleted" x="177" y="0"/>
+</item>
+<item historyLabel="equ_UltraSon.h" index="9">
+<position info="not_deleted" x="222" y="0"/>
+</item>
+<item historyLabel="equ_UltraSon.c" index="8">
+<position info="not_deleted" x="243" y="27"/>
+</item>
+<item historyLabel="equ_UltraSon.h" index="9">
+<position info="not_deleted" x="961" y="0"/>
+</item>
+<item historyLabel="equ_UltraSon.c" index="8">
+<position info="not_deleted" x="523" y="0"/>
+</item>
+<item historyLabel="app_GestionOuverture.h" index="12">
+<position info="not_deleted" x="1003" y="0"/>
+</item>
+<item historyLabel="equ_UltraSon.h" index="9">
+<position info="not_deleted" x="0" y="973"/>
+</item>
+<item historyLabel="app_GestionOuverture.h" index="12">
+<position info="not_deleted" x="1003" y="0"/>
+</item>
+<item historyLabel="drv_USART.c" index="2">
+<position info="not_deleted" x="4688" y="0"/>
+</item>
+<item historyLabel="app_GestionOuverture.h" index="12">
+<position info="not_deleted" x="1003" y="0"/>
+</item>
+<item historyLabel="app_GestionOuverture.c" index="13">
+<position info="not_deleted" x="1307" y="0"/>
+</item>
+<item historyLabel="app_GestionOuverture.h" index="12">
+<position info="not_deleted" x="210" y="0"/>
+</item>
+<item historyLabel="equ_UltraSon.c" index="8">
+<position info="not_deleted" x="0" y="1324"/>
+</item>
+<item historyLabel="app_GestionOuverture.c" index="13">
+<position info="not_deleted" x="251" y="45"/>
+</item>
+<item historyLabel="app_GestionOuverture.h" index="12">
+<position info="not_deleted" x="251" y="45"/>
+</item>
+<item historyLabel="app_GestionOuverture.c" index="13">
+<position info="not_deleted" x="466" y="33"/>
+</item>
+<item historyLabel="main.c" index="14">
+<position info="not_deleted" x="511" y="25"/>
+</item>
+<item historyLabel="app_GestionOuverture.c" index="13">
+<position info="not_deleted" x="896" y="0"/>
+</item>
+<item historyLabel="app_GestionOuverture.h" index="12">
+<position info="not_deleted" x="157" y="20"/>
+</item>
+<item active="true" historyLabel="app_GestionOuverture.c" index="13">
+<position info="not_deleted" x="896" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -460,52 +482,47 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="equ_ServoDirection.h" tooltip="OpenBox/equ/equ_ServoDirection.h">
 <persistable path="/OpenBox/equ/equ_ServoDirection.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="app_AffDebug.c" tooltip="OpenBox/app/app_AffDebug.c">
-<persistable path="/OpenBox/app/app_AffDebug.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="bsp_BoutonPoussoir.h" tooltip="OpenBox/bsp/bsp_BoutonPoussoir.h">
-<persistable path="/OpenBox/bsp/bsp_BoutonPoussoir.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="app_AffDebug.h" tooltip="OpenBox/app/app_AffDebug.h">
-<persistable path="/OpenBox/app/app_AffDebug.h"/>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="bsp_carte.h" tooltip="OpenBox/bsp/bsp_carte.h">
-<persistable path="/OpenBox/bsp/bsp_carte.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="bsp_carte.c" tooltip="OpenBox/bsp/bsp_carte.c">
-<persistable path="/OpenBox/bsp/bsp_carte.c"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="OpenBox/app/main.c">
 <persistable path="/OpenBox/app/main.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_pwr.c" tooltip="OpenBox/cmsis_lib/source/stm32f4xx_pwr.c">
-<persistable path="/OpenBox/cmsis_lib/source/stm32f4xx_pwr.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="app_GestionOuverture.c" tooltip="OpenBox/app/app_GestionOuverture.c">
+<persistable path="/OpenBox/app/app_GestionOuverture.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx.h" tooltip="OpenBox/cmsis_boot/stm32f4xx.h">
-<persistable path="/OpenBox/cmsis_boot/stm32f4xx.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="app_GestionOuverture.h" tooltip="OpenBox/app/app_GestionOuverture.h">
+<persistable path="/OpenBox/app/app_GestionOuverture.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_pwr.h" tooltip="OpenBox/cmsis_lib/include/stm32f4xx_pwr.h">
-<persistable path="/OpenBox/cmsis_lib/include/stm32f4xx_pwr.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="equ_UltraSon.h" tooltip="OpenBox/equ/equ_UltraSon.h">
+<persistable path="/OpenBox/equ/equ_UltraSon.h"/>
 </file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="equ_UltraSon.c" tooltip="OpenBox/equ/equ_UltraSon.c">
+<persistable path="/OpenBox/equ/equ_UltraSon.c"/>
 </file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="drv_GPIO.c" tooltip="OpenBox/drv/drv_GPIO.c">
+<persistable path="/OpenBox/drv/drv_GPIO.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="printf.c" tooltip="OpenBox/util/stdio/printf.c">
+<persistable path="/OpenBox/util/stdio/printf.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="equ_ServoDirection.c" tooltip="OpenBox/equ/equ_ServoDirection.c">
+<persistable path="/OpenBox/equ/equ_ServoDirection.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="config.h" tooltip="OpenBox/bsp/config.h">
+<persistable path="/OpenBox/bsp/config.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="OpenBox/drv/cmsis_boot/startup/startup_stm32f4xx.c">
+<persistable path="/OpenBox/drv/cmsis_boot/startup/startup_stm32f4xx.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="bsp_BoutonPoussoir.c" tooltip="OpenBox/bsp/bsp_BoutonPoussoir.c">
+<persistable path="/OpenBox/bsp/bsp_BoutonPoussoir.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="util_Console.c" tooltip="OpenBox/util/util_Console.c">
+<persistable path="/OpenBox/util/util_Console.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="drv_USART.c" tooltip="OpenBox/drv/drv_USART.c">
+<persistable path="/OpenBox/drv/drv_USART.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="app_AffDebug.c" tooltip="OpenBox/app/app_AffDebug.c">
+<persistable path="/OpenBox/app/app_AffDebug.c"/>
 </file>
 </mruList>
 </workbench>

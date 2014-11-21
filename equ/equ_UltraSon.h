@@ -18,6 +18,7 @@
  * Includes
  */
 #include "drv_PWM.h"
+#include "drv_ADC.h"
 #include "util_TSW.h"
 #include "util_Console.h"
 
@@ -37,6 +38,22 @@
 /********************************************************************
  * Exported Function
  */
+/**-------------------------------------------------------------------
+ *
+ * @brief		Gestion du module a ultrason
+ *
+ */
+void
+UltraSon_main(
+	void
+);
 
+void
+UltraSon_toString(
+
+		toString_Possibilities_e	Field,
+		Mapping_GPIO_e 			IDMapping,
+		uint8_t*			pString
+);
 
 #endif

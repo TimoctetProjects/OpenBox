@@ -91,27 +91,27 @@ static 		uint8_t 		ADC_NbChannelConf	[nb_ADCPeriph]				= {0};
  * Private Fonctions prototypes
  */
 
-inline Etat_ADC_e
+static inline Etat_ADC_e
 ADC_init(
 	uint32_t PeriphADC	/**<[in] Periph ADC*/
 );
 
-inline void
+static inline void
 ADC_initRCC(
 	uint32_t PeriphADC	/**<[in] Periph ADC*/
 );
 
-inline Liste_PeriphADC_e
+static inline Liste_PeriphADC_e
 ADC_GetADCPeriph(
 	uint32_t PeriphADC	/**<[in] Periph ADC*/
 );
 
-inline uint32_t
+static inline uint32_t
 prvADCvalue_to_mV(
 	uint32_t ADCvalue	/**<[in] ulADCvalue	Valeur de l'ADC. */
 );
 
-inline int8_t
+static inline int8_t
 prvADC_GetNextActif(
 	uint32_t periph		/**<[in] Periph ADC*/
 );
@@ -144,6 +144,7 @@ void ADC1_Tick() {
 /**-------------------------------------------------------------------
  *
  * @brief	Configuration d'un canal d'un ADC
+ * @return	ID du channel ADC alloue
  *
  */
 uint8_t
@@ -345,7 +346,7 @@ ADC_StartConversion(
  * @brief	Initialsiation de l'ADC
  *
  */
-inline Etat_ADC_e
+static inline Etat_ADC_e
 ADC_init(
 	uint32_t PeriphADC	/**<[in] Periph ADC*/
 ) {
@@ -389,7 +390,7 @@ ADC_init(
 
 	NVIC_InitStructure.NVIC_IRQChannel = ADC_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init( &NVIC_InitStructure );
 
@@ -421,7 +422,7 @@ ADC_init(
  * @return	Valeur en mV.
  *
  */
-inline uint32_t
+static inline uint32_t
 prvADCvalue_to_mV(
 	uint32_t ADCvalue	/**<[in] ulADCvalue	Valeur de l'ADC. */
 ) {
@@ -442,7 +443,7 @@ prvADCvalue_to_mV(
  * @return	Numero de l'ID attrubue au  configure ((-1) si aucun).
  *
  */
-inline int8_t
+static inline int8_t
 prvADC_GetNextActif(
 		uint32_t periph		/**<[in] Periph ADC. */
 ) {
@@ -471,7 +472,7 @@ prvADC_GetNextActif(
  * @brief	Initialsiation des horloges des ADC
  *
  */
-inline void
+static inline void
 ADC_initRCC(
 	uint32_t PeriphADC	/**<[in] Periph ADC*/
 ) {
@@ -485,7 +486,7 @@ ADC_initRCC(
  * @brief	Lecture du periph
  *
  */
-inline Liste_PeriphADC_e
+static inline Liste_PeriphADC_e
 ADC_GetADCPeriph(
 	uint32_t PeriphADC	/**<[in] Periph ADC*/
 ) {

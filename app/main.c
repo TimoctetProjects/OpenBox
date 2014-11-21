@@ -29,7 +29,7 @@ int
 main(
 	void
 ) {
-	ServoDirection_ListePosition_e	pos = ServoDirection_Position_moins90;
+	ServoDirection_ListePosition_e	pos = MicroServo_Position_moins90;
 	Bool_e test = FALSE;
 
 	//--------------------------------------------------------------
@@ -38,8 +38,8 @@ main(
 	TSW_init();
 	SysTick_Config(CONFIG_SYSCLOCK_1ms);
 
-	pos = ServoDirection_Position_moins90;
-	ServoDirection_SetNewPosition(ServoDirection_Position_moins90);
+	pos = MicroServo_Position_moins90;
+	MicroServo_SetNewPosition(MicroServo_Position_moins90);
 
 	//------------ Affichage version logicielle
 	#ifdef MODE_DEBUG_ON
@@ -73,15 +73,15 @@ main(
 
 			if(test == FALSE) {
 
-				if(pos == ServoDirection_Position_moins90) {
+				if(pos == MicroServo_Position_moins90) {
 
-					ServoDirection_SetNewPosition(ServoDirection_Position_moins45);
-					pos = ServoDirection_Position_moins45;
+					MicroServo_SetNewPosition(MicroServo_Position_moins45);
+					pos = MicroServo_Position_moins45;
 				}
 
 				else {
-					ServoDirection_SetNewPosition(ServoDirection_Position_moins90);
-					pos = ServoDirection_Position_moins90;
+					MicroServo_SetNewPosition(MicroServo_Position_moins90);
+					pos = MicroServo_Position_moins90;
 				}
 
 				test = TRUE;
@@ -90,7 +90,8 @@ main(
 		} else test = FALSE;
 
 		//-------- ServoDirection
-		ServoDirection_Main();
+		MicroServo_Main();
+		UltraSon_main();
 	}
 }
 

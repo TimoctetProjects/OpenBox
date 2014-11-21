@@ -55,10 +55,10 @@ typedef enum {
 /********************************************************************
  * Private variables
  */
-static ServoDirection_ListePosition_e NewPosition	= ServoDirection_Position_zero;
+static ServoDirection_ListePosition_e NewPosition	= MicroServo_Position_zero;
 static ServoDirection_ListePosition_e Position 		= SERVO_DIRECTION_RATIO_POSITION_0_deg;
 
-static const ServoDirection_ListePosition_e	ListePosition[nb_ServoDirection_Positions] = {
+static const ServoDirection_ListePosition_e	ListePosition[nb_MicroServo_Positions] = {
 
 		SERVO_DIRECTION_RATIO_POSITION_MOINS90_deg,
 		SERVO_DIRECTION_RATIO_POSITION_MOINS45_deg,
@@ -81,7 +81,7 @@ static const ServoDirection_ListePosition_e	ListePosition[nb_ServoDirection_Posi
  *
  */
 void
-ServoDirection_Main(
+MicroServo_Main(
 		void
 ) {
 
@@ -92,10 +92,10 @@ ServoDirection_Main(
 		//--------------------------------------------------------------
 		case ServoDirection_Etape_Initialsiation:
 
-					PWM_Init	(PIN_SERVO_DRIECTION,
+					PWM_Init	(PIN_PWM_MICRO_SERVO,
 							SERVO_DIRECTION_CMD_SERVO_PERIODE_PWM_us,
 							SERVO_DIRECTION_RATIO_POSITION_0_deg);
-					Pwm_Activer	(PIN_SERVO_DRIECTION);
+					Pwm_Activer	(PIN_PWM_MICRO_SERVO);
 					Etape	 	= ServoDirection_Etape_AttenteCommande;
 					break;
 
@@ -104,12 +104,12 @@ ServoDirection_Main(
 		//--------------------------------------------------------------
 		case ServoDirection_Etape_Commande:
 
-					Pwm_Desactiver	( PIN_SERVO_DRIECTION );
-					PWM_Desinit	( PIN_SERVO_DRIECTION );
-					PWM_Init	( PIN_SERVO_DRIECTION,
+					Pwm_Desactiver	( PIN_PWM_MICRO_SERVO );
+					PWM_Desinit	( PIN_PWM_MICRO_SERVO );
+					PWM_Init	( PIN_PWM_MICRO_SERVO,
 							SERVO_DIRECTION_CMD_SERVO_PERIODE_PWM_us,
 							  ListePosition[Position] );
-					Pwm_Activer	( PIN_SERVO_DRIECTION );
+					Pwm_Activer	( PIN_PWM_MICRO_SERVO );
 					Etape	 	= ServoDirection_Etape_AttenteCommande;
 					break;
 
@@ -138,7 +138,7 @@ ServoDirection_Main(
  *
  */
 void
-ServoDirection_SetNewPosition(
+MicroServo_SetNewPosition(
 		ServoDirection_ListePosition_e	pos	/**<[in] Nouvelle position a adopter */
 ) {
 
@@ -153,7 +153,7 @@ ServoDirection_SetNewPosition(
  *
  */
 ServoDirection_ListePosition_e
-ServoDirection_GetPosition(
+MicroServo_GetPosition(
 		void
 ) {
 
@@ -168,7 +168,7 @@ ServoDirection_GetPosition(
  *
  */
 void
-ServoDirection_toString(
+MicroServo_toString(
 
 		toString_Possibilities_e	Field,
 		Mapping_GPIO_e 			IDMapping,
@@ -184,27 +184,27 @@ ServoDirection_toString(
 
 			switch(Position) {
 
-				case	ServoDirection_Position_moins90:	__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_cyan);
+				case	MicroServo_Position_moins90:	__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_cyan);
 										__Insert_Moins90Deg_String(pString);
 										__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_blanc);
 										break;
 
-				case	ServoDirection_Position_moins45:	__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_jaune);
+				case	MicroServo_Position_moins45:	__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_jaune);
 										__Insert_Moins45Deg_String(pString);
 										__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_blanc);
 										break;
 
-				case	ServoDirection_Position_zero:		__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_verte);
+				case	MicroServo_Position_zero:		__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_verte);
 										__Insert_Moins0Deg_String(pString);
 										__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_blanc);
 										break;
 
-				case	ServoDirection_Position_plus45:		__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_jaune);
+				case	MicroServo_Position_plus45:		__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_jaune);
 										__Insert_Plus45Deg_String(pString);
 										__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_blanc);
 										break;
 
-				case	ServoDirection_Position_plus90:		__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_cyan);
+				case	MicroServo_Position_plus90:		__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_cyan);
 										__Insert_Plus90Deg_String(pString);
 										__VT100STRING_SET_FOREGROUND_COLOR(pString, Couleur_blanc);
 										break;

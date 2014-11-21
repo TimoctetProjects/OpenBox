@@ -164,12 +164,12 @@ DonneAffiche_s DonneAffiche[nb_Donnes] = {
 
 /** Btn WKP */		{	"Bouton Wake Up (Discovery)",	Button_WKP,		"",		(pFunction)Button_Value_toString,	TRUE		},
 
-/** PWM Servo */	{	"PWM Direction (Servo Futuba)",	PIN_SERVO_DRIECTION,	"",		(pFunction)PWM_Value_toString,		TRUE		},
-/** PWM SCLK */		{	"PWM SCLK (Camera)",		BROCHE_CLK,		"",		(pFunction)PWM_Value_toString,		TRUE		},
+/** PWM Servo */	{	"PWM MICRO SERVO",		PIN_PWM_MICRO_SERVO,	"",		(pFunction)PWM_Value_toString,		TRUE		},
+/** PWM SCLK */		{	"PWM ULTRA SON TRIG CLK",	Pin_UltraSon_Trig,	"",		(pFunction)PWM_Value_toString,		TRUE		},
 
-/** Potentiometre_1 */	{	"Potentiometre 1 (FDRM)",	Potentiometre_1, 	"",		(pFunction)GPIO_Value_toString,		TRUE 		},
+/** Echo ultra son */	{	"Echo Ultra Son",		Pin_UltraSon_Echo, 	"",		(pFunction)UltraSon_toString,		TRUE 		},
 
-/** Pos Direction */	{	"Position Servo Direction",	PIN_NULL,		"",		(pFunction)ServoDirection_toString,	TRUE 		},
+/** Pos Direction */	{	"Position Servo Direction",	PIN_NULL,		"",		(pFunction)MicroServo_toString,		TRUE 		},
 };
 
 

@@ -147,37 +147,24 @@ static PWM_s	PWM[nb_Periph][nb_TimChannels];
 /********************************************************************
  * Private Fonctions Prototypes
  */
-
-inline void
-PWM_initTimeBase(
-	Mapping_GPIO_e	IdPinPwm,	/**<[in] ID de la Pin ou générer la PWM*/
-	uint32_t 	TIM_Periode,	/**<[in] Periode de comptage */
-	uint32_t 	TIM_Prescaler 	/**<[in] Prescaler du TimeBase */
-);
-
-inline void
+static inline void
 PWM_initOutputCompare(
 	Mapping_GPIO_e	IdPinPwm,	/**<[in] ID de la Pin ou générer la PWM*/
 	uint32_t 	TIM_Periode,	/**<[in] Periode de comptage */
 	uint32_t	Ratio_pr100	/**<[in] Ratio du signal PWM en % */
 );
 
-inline void
-PWM_initTimeBase_RccInit(
-	uint32_t Periph		/**<[in] Peripheral to initialize */
-);
-
-inline ListePeriphTim_e
+static inline ListePeriphTim_e
 PWM_Save_GetTimPeriph(
 	uint32_t Periph		/**<[in] Peripheral to save */
 );
 
-inline ListeTimChannels_e
+static inline ListeTimChannels_e
 PWM_Save_GetTimChannel(
 	uint32_t Channel	/**<[in] Canal */
 );
 
-inline void
+static inline void
 PWM_IT_init(
 	uint32_t Periph,
 	uint32_t Channel
@@ -219,6 +206,9 @@ Pwm_Activer(
 	TIM_CtrlPWMOutputs(	(TIM_TypeDef*) Mapping_GPIO[IdPinPwm].Periph,
 				ENABLE						);
 
+	if(Mapping_GPIO[IdPinPwm].Etat_Interruption == Interrupt_ON)
+		TIM_ITConfig(TIM2, TIM_IT_CC4, ENABLE);
+
 	return PWM_Running;
 }
 
@@ -245,8 +235,8 @@ Pwm_Desactiver(
 	if(PWM_State == PWM_Stopped)		return PWM_Stopped;
 
 	__SetRunningState(	FALSE,
-				 Mapping_GPIO[IdPinPwm].Periph,
-				 Mapping_GPIO[IdPinPwm].Parametre );
+				Mapping_GPIO[IdPinPwm].Periph,
+				Mapping_GPIO[IdPinPwm].Parametre );
 
 	TIM_CCxCmd	  (	(TIM_TypeDef*) Mapping_GPIO[IdPinPwm].Periph,
 				Mapping_GPIO[IdPinPwm].Parametre,
@@ -302,7 +292,7 @@ PWM_Init(
 		TIM_Periode >>= 1;
 	}
 
-	PWM_initTimeBase	(IdPinPwm,	TIM_Periode, 	TIM_Prescaler	);
+	TimeBase_init	(IdPinPwm,	TIM_Periode, 	TIM_Prescaler	);
 	PWM_initOutputCompare	(IdPinPwm, 	TIM_Periode, 	Ratio_pr100	);
 
 	//--------- Configuration interruption
@@ -310,20 +300,6 @@ PWM_Init(
 
 		PWM_IT_init(	Mapping_GPIO[IdPinPwm].Periph,
 				Mapping_GPIO[IdPinPwm].Parametre	);
-	}
-
-	//--------- Activation du Timer
-	TIM_Cmd( (TIM_TypeDef*) Mapping_GPIO[IdPinPwm].Periph, ENABLE );
-
-	if(Mapping_GPIO[IdPinPwm].EtatInit == ETAT_ACTIF) {
-
-		Pwm_Activer(IdPinPwm);
-
-	} else {
-
-		__SetRunningState(	PWM_Stopped,
-					Mapping_GPIO[IdPinPwm].Periph,
-					Mapping_GPIO[IdPinPwm].Parametre );
 	}
 
 	//--------- Sauvegarde de la periode
@@ -334,6 +310,20 @@ PWM_Init(
 	__SetConfState( Mapping_GPIO[IdPinPwm].Periph,
 			Mapping_GPIO[IdPinPwm].Parametre,
 			PWM_Configured			  );
+
+	//--------- Activation du Timer
+	TIM_Cmd( (TIM_TypeDef*) Mapping_GPIO[IdPinPwm].Periph, ENABLE );
+
+	if(Mapping_GPIO[IdPinPwm].EtatInit == ETAT_ACTIF) {
+
+		Pwm_Activer(IdPinPwm);
+
+	} else {
+		Pwm_Desactiver(IdPinPwm);
+		/*__SetRunningState(	PWM_Stopped,
+					Mapping_GPIO[IdPinPwm].Periph,
+					Mapping_GPIO[IdPinPwm].Parametre );*/
+	}
 
 	return PWM_OK;
 }
@@ -400,7 +390,9 @@ void
 TIM2_IRQHandler(
 	void
 ) {
-	asm("nop");
+	Pwm_Desactiver(Pin_UltraSon_Trig);
+	TIM_ITConfig(TIM2, TIM_IT_CC4, DISABLE);
+
 }
 
 void
@@ -420,35 +412,6 @@ TIM4_IRQHandler(
 /********************************************************************
  * Private Fonctions Definition
  */
-
-/**------------------------------------------------------------------
- *
- * @brief	Init Clock APB1 ou APB2 en fonction du TIM
- *
- */
-inline void
-PWM_initTimeBase_RccInit(
-		uint32_t Periph
-) {
-	switch(Periph) {
-
-		case (uint32_t) TIM1: 	RCC_APB1PeriphClockCmd(RCC_APB2Periph_TIM1,  ENABLE); 	break;
-		case (uint32_t) TIM2: 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2,  ENABLE); 	break;
-		case (uint32_t) TIM3: 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3,  ENABLE); 	break;
-		case (uint32_t) TIM4: 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4,  ENABLE); 	break;
-		case (uint32_t) TIM5: 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM5,  ENABLE); 	break;
-		case (uint32_t) TIM6: 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM6,  ENABLE); 	break;
-		case (uint32_t) TIM7: 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM7,  ENABLE); 	break;
-		case (uint32_t) TIM8: 	RCC_APB1PeriphClockCmd(RCC_APB2Periph_TIM8,  ENABLE); 	break;
-		case (uint32_t) TIM9: 	RCC_APB1PeriphClockCmd(RCC_APB2Periph_TIM9,  ENABLE); 	break;
-		case (uint32_t) TIM10: 	RCC_APB1PeriphClockCmd(RCC_APB2Periph_TIM10, ENABLE); 	break;
-		case (uint32_t) TIM11: 	RCC_APB1PeriphClockCmd(RCC_APB2Periph_TIM11, ENABLE); 	break;
-		case (uint32_t) TIM12: 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM12, ENABLE); 	break;
-		case (uint32_t) TIM13: 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM13, ENABLE); 	break;
-		case (uint32_t) TIM14: 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM14, ENABLE); 	break;
-	}
-}
-
 /**------------------------------------------------------------------
  *
  * @brief	Lecture du periph TIM
@@ -456,7 +419,7 @@ PWM_initTimeBase_RccInit(
  * @return	Periph
  *
  */
-inline ListePeriphTim_e
+static inline ListePeriphTim_e
 PWM_Save_GetTimPeriph(
 		uint32_t Periph
 ) {
@@ -488,7 +451,7 @@ PWM_Save_GetTimPeriph(
  * @return	Channel
  *
  */
-inline ListeTimChannels_e
+static inline ListeTimChannels_e
 PWM_Save_GetTimChannel(
 		uint32_t	Channel
 ) {
@@ -503,39 +466,6 @@ PWM_Save_GetTimChannel(
 	}
 }
 
-/**------------------------------------------------------------------
- *
- * @brief	Initialisation du TimeBase
- *
- */
-inline void
-PWM_initTimeBase(
-		Mapping_GPIO_e	IdPinPwm,			/**<[in] ID de la Pin ou générer la PWM*/
-		uint32_t 		TIM_Periode,		/**<[in] Periode de comptage */
-		uint32_t 		TIM_Prescaler 		/**<[in] Prescaler du TimeBase */
-) {
-
-	//----------------------------------------------------------------------------
-	//------------------------ Déclaration et Initialisation ---------------------
-	//----------------------------------------------------------------------------
-	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;	/** Structure d'initialisation TimeBase */
-
-	//--------- Initialisation des structures aux valeurs par défaut
-	TIM_TimeBaseStructInit	(&TIM_TimeBaseInitStruct);
-
-
-	//--------- Initialisation de l'horloge
-	PWM_initTimeBase_RccInit(Mapping_GPIO[IdPinPwm].Periph);
-
-	//---------- Remplissage de la structure d'init TimBase
-	TIM_TimeBaseInitStruct.TIM_Prescaler		= TIM_Prescaler;
-	TIM_TimeBaseInitStruct.TIM_Period		= TIM_Periode;
-	TIM_TimeBaseInitStruct.TIM_CounterMode		= TIM_CounterMode_Up;
-	TIM_TimeBaseInitStruct.TIM_ClockDivision	= TIM_CKD_DIV1;
-
-	//--------- Initialisation de la base de temps
-	TIM_TimeBaseInit( (TIM_TypeDef*) Mapping_GPIO[IdPinPwm].Periph, &TIM_TimeBaseInitStruct );
-}
 
 /**------------------------------------------------------------------
  *
@@ -544,7 +474,7 @@ PWM_initTimeBase(
  * @warning La Pin doit être configuré
  *
  */
-inline void
+static inline void
 PWM_initOutputCompare(
 		Mapping_GPIO_e	IdPinPwm,		/**<[in] ID de la Pin ou générer la PWM*/
 		uint32_t 		TIM_Periode,		/**<[in] Periode de comptage */
@@ -618,26 +548,26 @@ PWM_initOutputCompare(
  * @brief	Init IT
  *
  */
-inline void
+static inline void
 PWM_IT_init(
 	uint32_t Periph,
 	uint32_t Channel
 ) {
-	//NVIC_InitTypeDef 	NVIC_InitStructure;
+	NVIC_InitTypeDef 	NVIC_InitStructure;
 
-	/*
-		NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
-		NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-		NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
-		NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-		NVIC_Init( &NVIC_InitStructure );*/
+
+	NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init( &NVIC_InitStructure );
 
 	switch(Channel) {
 
-		case (uint32_t) TIM_Channel_1:		TIM_ITConfig((TIM_TypeDef* )Periph, TIM_IT_CC1, ENABLE);
-		case (uint32_t) TIM_Channel_2:		TIM_ITConfig((TIM_TypeDef* )Periph, TIM_IT_CC2, ENABLE);
-		case (uint32_t) TIM_Channel_3:		TIM_ITConfig((TIM_TypeDef* )Periph, TIM_IT_CC3, ENABLE);
-		case (uint32_t) TIM_Channel_4:		TIM_ITConfig((TIM_TypeDef* )Periph, TIM_IT_CC4, ENABLE);
+		case (uint32_t) TIM_Channel_1:		TIM_ITConfig((TIM_TypeDef* )Periph, TIM_IT_CC1, DISABLE);
+		case (uint32_t) TIM_Channel_2:		TIM_ITConfig((TIM_TypeDef* )Periph, TIM_IT_CC2, DISABLE);
+		case (uint32_t) TIM_Channel_3:		TIM_ITConfig((TIM_TypeDef* )Periph, TIM_IT_CC3, DISABLE);
+		case (uint32_t) TIM_Channel_4:		TIM_ITConfig((TIM_TypeDef* )Periph, TIM_IT_CC4, DISABLE);
 
 		default:				return;
 	}
@@ -648,7 +578,7 @@ PWM_IT_init(
  * @brief	ToString Valeur PWM
  *
  */
-inline void
+void
 PWM_Value_toString(
 
 		toString_Possibilities_e	Field,

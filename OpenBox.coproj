@@ -93,8 +93,8 @@
     <File name="equ/equ_UltraSon.c" path="equ/equ_UltraSon.c" type="1"/>
     <File name="util/util_Console.h" path="../Rover_2014/util/util_Console.h" type="1"/>
     <File name="util/stdio" path="" type="2"/>
-    <File name="drv/cmsis_lib/include" path="" type="2"/>
     <File name="drv" path="" type="2"/>
+    <File name="drv/cmsis_lib/include" path="" type="2"/>
     <File name="util/syscalls" path="" type="2"/>
     <File name="drv/cmsis" path="" type="2"/>
     <File name="util/stdio/printf.c" path="util/stdio/printf.c" type="1"/>
@@ -104,10 +104,11 @@
     <File name="bsp" path="" type="2"/>
     <File name="bsp/bsp_carte.c" path="bsp/bsp_carte.c" type="1"/>
     <File name="drv/cmsis_lib/source/stm32f4xx_adc.c" path="drv/cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
+    <File name="util/syscalls/syscalls.c" path="util/syscalls/syscalls.c" type="1"/>
     <File name="equ/equ_ServoDirection.h" path="equ/equ_ServoDirection.h" type="1"/>
     <File name="drv/cmsis/core_cmInstr.h" path="drv/cmsis/core_cmInstr.h" type="1"/>
-    <File name="util/syscalls/syscalls.c" path="util/syscalls/syscalls.c" type="1"/>
     <File name="app/app_GestionOuverture.c" path="app/app_GestionOuverture.c" type="1"/>
+    <File name="drv/drv_TimBase.c" path="drv/drv_TimBase.c" type="1"/>
     <File name="drv/cmsis_lib/source/stm32f4xx_pwr.c" path="drv/cmsis_lib/source/stm32f4xx_pwr.c" type="1"/>
     <File name="drv/cmsis_boot/startup" path="" type="2"/>
     <File name="util" path="" type="2"/>
@@ -126,8 +127,9 @@
     <File name="app/main.c" path="app/main.c" type="1"/>
     <File name="drv/cmsis_boot/system_stm32f4xx.c" path="drv/cmsis_boot/system_stm32f4xx.c" type="1"/>
     <File name="drv/cmsis_lib/source/stm32f4xx_gpio.c" path="drv/cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
-    <File name="app/app_AffDebug.h" path="app/app_AffDebug.h" type="1"/>
     <File name="util/util_TSW.h" path="../Rover_2014/util/util_TSW.h" type="1"/>
+    <File name="app/app_AffDebug.h" path="app/app_AffDebug.h" type="1"/>
+    <File name="drv/drv_TimBase.h" path="drv/drv_TimBase.h" type="1"/>
     <File name="drv/cmsis_lib/source/stm32f4xx_tim.c" path="drv/cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
     <File name="drv/cmsis_lib/include/stm32f4xx_tim.h" path="drv/cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
     <File name="drv/cmsis/core_cmFunc.h" path="drv/cmsis/core_cmFunc.h" type="1"/>

@@ -147,9 +147,9 @@ UltraSon_toString(
 
 
 		case toString_GetValue:
-			snprintf(Value, 7, "%d", InputCapture_GetValue(IDMapping));
-			strncat(pString, Value, strlen(Value));
-			strncat(pString, " ms", strlen(" ms"));
+			snprintf(Value, 7, "%d", (int)InputCapture_GetValue(IDMapping));
+			strncat((char *)pString, (char *)Value, strlen((char *)Value));
+			strncat((char *)pString, " ms", strlen(" ms"));
 			break;
 	}
 }

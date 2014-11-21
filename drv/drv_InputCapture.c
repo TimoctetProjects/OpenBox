@@ -90,8 +90,6 @@ InputCapture_init(
 	if (IdPinIC >= nb_GPIO)
 		return IC_Err_Unavailable;
 
-	//TIM_ICStructInit(&TIM_ICInitStruct);
-
 	TIM_Prescaler = (((SystemCoreClock / 1000000) / 2) - 1);
 	TIM_Periode = (Periode_us * 2) - 1;
 
@@ -108,8 +106,6 @@ InputCapture_init(
 	}
 
 	TIM_Cmd( (TIM_TypeDef*) Mapping_GPIO[IdPinIC].Periph, ENABLE );
-
-
 
 	return IC_OK;
 }

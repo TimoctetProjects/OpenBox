@@ -69,7 +69,7 @@ main(
 		}
 
 
-		if(BtnPssr_ReadState(Button_WKP) == Button_State_Pressed) {
+		/*if(BtnPssr_ReadState(Button_WKP) == Button_State_Pressed) {
 
 			if(test == FALSE) {
 
@@ -87,11 +87,12 @@ main(
 				test = TRUE;
 			}
 
-		} else test = FALSE;
+		} else test = FALSE;*/
 
 		//-------- ServoDirection
 		MicroServo_Main();
 		UltraSon_main();
+		GestionOuverture_main();
 	}
 }
 

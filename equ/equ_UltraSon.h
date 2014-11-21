@@ -18,6 +18,7 @@
  * Includes
  */
 #include "drv_PWM.h"
+#include "drv_InputCapture.h"
 #include "util_TSW.h"
 #include "util_Console.h"
 
@@ -44,6 +45,11 @@
  */
 void
 UltraSon_main(
+	void
+);
+
+uint32_t
+UltraSon_getValue_ms(
 	void
 );
 

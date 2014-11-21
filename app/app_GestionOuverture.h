@@ -36,6 +36,9 @@
 /********************************************************************
  * Exported Function
  */
-
+void
+GestionOuverture_main(
+	void
+);
 
 #endif

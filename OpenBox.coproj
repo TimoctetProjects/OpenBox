@@ -87,7 +87,6 @@
     <File name="drv/drv_GPIO.h" path="drv/drv_GPIO.h" type="1"/>
     <File name="bsp/bsp_carte.h" path="bsp/bsp_carte.h" type="1"/>
     <File name="drv/cmsis/core_cm4.h" path="drv/cmsis/core_cm4.h" type="1"/>
-    <File name="equ/equ_ServoDirection.c" path="equ/equ_ServoDirection.c" type="1"/>
     <File name="drv/drv_PWM.h" path="drv/drv_PWM.h" type="1"/>
     <File name="equ/equ_UltraSon.c" path="equ/equ_UltraSon.c" type="1"/>
     <File name="util/util_Console.h" path="../Rover_2014/util/util_Console.h" type="1"/>
@@ -111,6 +110,7 @@
     <File name="drv/cmsis_lib/source/stm32f4xx_pwr.c" path="drv/cmsis_lib/source/stm32f4xx_pwr.c" type="1"/>
     <File name="drv/cmsis_boot/startup" path="" type="2"/>
     <File name="util" path="" type="2"/>
+    <File name="equ/equ_MicroServo.c" path="equ/equ_ServoDirection.c" type="1"/>
     <File name="drv/cmsis_lib/source/misc.c" path="drv/cmsis_lib/source/misc.c" type="1"/>
     <File name="drv/cmsis_boot/startup/startup_stm32f4xx.c" path="drv/cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
     <File name="drv/cmsis_lib/source/stm32f4xx_usart.c" path="drv/cmsis_lib/source/stm32f4xx_usart.c" type="1"/>

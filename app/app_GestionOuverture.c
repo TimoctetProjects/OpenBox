@@ -32,7 +32,12 @@
 /********************************************************************
  * Private Types
  */
+typedef enum {
 
+	GestionOuverture_Etape_init = 0,
+	GestionOuverture_Etape_main,
+
+}Liste_Etapes_GestionOuverture_e;
 
 
 /********************************************************************
@@ -47,9 +52,31 @@
 /********************************************************************
  * Exported Fonctions
  */
-
 /**-------------------------------------------------------------------
  *
- * @brief
+ * @brief	Main de la gestion d'ouverture de la boite
  *
  */
+void
+GestionOuverture_main(
+	void
+) {
+	static Liste_Etapes_GestionOuverture_e Etape = GestionOuverture_Etape_init;
+
+	switch(Etape) {
+
+		case GestionOuverture_Etape_init:
+			Etape = GestionOuverture_Etape_main;
+			break;
+
+
+		case GestionOuverture_Etape_main:
+			if(UltraSon_getValue_ms() < 2000) {
+				MicroServo_SetNewPosition(MicroServo_Position_moins45);
+
+			} else {
+				MicroServo_SetNewPosition(MicroServo_Position_moins90);
+			}
+			break;
+	}
+}

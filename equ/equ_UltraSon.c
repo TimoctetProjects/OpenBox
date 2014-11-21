@@ -48,7 +48,7 @@ typedef enum {
 typedef struct {
 	Mapping_GPIO_e 	ID_Pin_Trig;
 	Mapping_GPIO_e 	ID_Pin_Echo;
-	uint32_t	ValueEcho_mV;
+	uint32_t	ValueEcho_ms;
 	uint8_t		IDADC_Channel;
 }UltraSon_s;
 
@@ -57,7 +57,7 @@ typedef struct {
  */
 static UltraSon_s UltraSon = {	.ID_Pin_Trig 	= 	Pin_UltraSon_Trig,
 				.ID_Pin_Echo 	= 	Pin_UltraSon_Echo,
-				.ValueEcho_mV  	=	0,
+				.ValueEcho_ms  	=	0,
 				.IDADC_Channel	=	0			};
 
 /********************************************************************
@@ -98,13 +98,25 @@ UltraSon_main(
 						if(TSW_GetStatus(IDTSW_UltraSon_MesureEcho) == STATUS_FINIS) {
 							Pwm_Activer	(	UltraSon.ID_Pin_Trig		 );
 							TSW_Start(IDTSW_UltraSon_MesureEcho, ULTRASON_PERIODE_MESURE_ULTRASON_ms);
-
+							UltraSon.ValueEcho_ms = InputCapture_GetValue(UltraSon.ID_Pin_Echo);
 						}
 			break;
 
 		default:
 			break;
 	}
+}
+
+/**-------------------------------------------------------------------
+ *
+ * @brief		Lecture de la valeur capturee
+ *
+ */
+uint32_t
+UltraSon_getValue_ms(
+	void
+) {
+	return UltraSon.ValueEcho_ms;
 }
 
 /**-------------------------------------------------------------------

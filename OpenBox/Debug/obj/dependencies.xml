@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
    <includePath signature="/I..\..\..\workspace\OpenBox\drv\cmsis_boot /I..\..\..\workspace\OpenBox\app /I..\..\..\workspace\OpenBox /I..\..\..\workspace /I..\..\..\workspace\OpenBox\drv\cmsis_lib\include /I..\..\..\workspace\OpenBox\drv\cmsis_lib /I..\..\..\workspace\Rover_2014\util /I..\..\..\workspace\Rover_2014 /I..\..\..\workspace\OpenBox\drv\cmsis /I..\..\..\workspace\OpenBox\bsp /I..\..\..\workspace\OpenBox\drv /I..\..\..\workspace\OpenBox\equ">
+      <source file="..\..\..\drv\drv_InputCapture.h" lastModified="149d40fb6de">
+         <include file="..\..\..\drv\drv_TimBase.h"/>
+      </source>
       <source file="..\..\..\drv\cmsis\core_cmInstr.h" lastModified="149d177ae28">
-      </source>
-      <source file="..\..\..\drv\cmsis_lib\include\stm32f4xx_adc.h" lastModified="149d177b579">
-         <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\drv\drv_ADC.c" lastModified="149d3393012">
-         <include file="..\..\..\drv\drv_ADC.h"/>
       </source>
       <source file="..\..\..\equ\equ_ServoDirection.c" lastModified="149d2af9ff3">
          <include file="..\..\..\equ\equ_ServoDirection.h"/>
+      </source>
+      <source file="..\..\..\drv\drv_InputCapture.c" lastModified="149d40f1fe6">
+         <include file="..\..\..\drv\drv_InputCapture.h"/>
       </source>
       <source file="..\..\..\drv\cmsis_lib\include\misc.h" lastModified="149d178115e">
          <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
@@ -23,13 +23,12 @@
       <source file="..\..\..\drv\cmsis_lib\source\misc.c" lastModified="149d1781172">
          <include file="..\..\..\drv\cmsis_lib\include\misc.h"/>
       </source>
-      <source file="..\..\..\bsp\bsp_carte.h" lastModified="149d32908e2">
+      <source file="..\..\..\bsp\bsp_carte.h" lastModified="149d3b927bd">
          <include file="..\..\..\bsp\config.h"/>
          <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\drv\cmsis_lib\include\misc.h"/>
          <include file="..\..\..\drv\cmsis\core_cm4.h"/>
          <include file="..\..\..\drv\cmsis\core_cmFunc.h"/>
-         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_adc.h"/>
          <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_tim.h"/>
          <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h"/>
@@ -39,9 +38,8 @@
          <include file="..\..\..\bsp\bsp_carte.h"/>
          <include file="..\..\..\drv\cmsis_lib\include\misc.h"/>
       </source>
-      <source file="..\..\..\equ\equ_UltraSon.h" lastModified="149d2cb7f79">
+      <source file="..\..\..\equ\equ_UltraSon.h" lastModified="149d38d966e">
          <include file="..\..\..\drv\drv_PWM.h"/>
-         <include file="..\..\..\drv\drv_ADC.h"/>
          <include file="..\..\..\..\Rover_2014\util\util_TSW.h"/>
          <include file="..\..\..\..\Rover_2014\util\util_Console.h"/>
       </source>
@@ -49,18 +47,21 @@
          <include file="..\..\..\bsp\bsp_carte.h"/>
          <include file="..\..\..\..\Rover_2014\util\util_FIFO.h"/>
       </source>
-      <source file="..\..\..\equ\equ_UltraSon.c" lastModified="149d332249c">
+      <source file="..\..\..\equ\equ_UltraSon.c" lastModified="149d40f201a">
          <include file="..\..\..\equ\equ_UltraSon.h"/>
       </source>
       <source file="..\..\..\drv\drv_USART.c" lastModified="149d23c04d6">
          <include file="..\..\..\drv\drv_USART.h"/>
       </source>
-      <source file="..\..\..\drv\drv_TimBase.h" lastModified="149d380e3d6">
+      <source file="..\..\..\drv\drv_TimBase.h" lastModified="149d39be493">
          <include file="..\..\..\bsp\bsp_carte.h"/>
       </source>
-      <source file="..\..\..\drv\drv_GPIO.h" lastModified="148db3717f0">
+      <source file="..\..\..\drv\drv_GPIO.h" lastModified="149d3910172">
          <include file="..\..\..\bsp\bsp_carte.h"/>
          <include file="..\..\..\..\Rover_2014\util\util_Console.h"/>
+      </source>
+      <source file="..\..\..\drv\drv_TimBase.c" lastModified="149d38c1b25">
+         <include file="..\..\..\drv\drv_TimBase.h"/>
       </source>
       <source file="..\..\..\drv\drv_GPIO.c" lastModified="149d24af99b">
          <include file="..\..\..\drv\drv_GPIO.h"/>
@@ -102,6 +103,9 @@
       <source file="..\..\..\drv\cmsis_boot\system_stm32f4xx.c" lastModified="149d177a9f0">
          <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
       </source>
+      <source file="..\..\..\drv\drv_PWM.c" lastModified="149d403f0b3">
+         <include file="..\..\..\drv\drv_PWM.h"/>
+      </source>
       <source file="..\..\..\..\Rover_2014\util\util_TSW.c" lastModified="148ff0300fa">
          <include file="..\..\..\..\Rover_2014\util\util_TSW.h"/>
       </source>
@@ -112,7 +116,7 @@
       <source file="..\..\..\..\Rover_2014\util\util_FIFO.h" lastModified="1491f2fd485">
          <include file="..\..\..\bsp\bsp_carte.h"/>
       </source>
-      <source file="..\..\..\bsp\config.h" lastModified="149d255b581">
+      <source file="..\..\..\bsp\config.h" lastModified="149d39a5032">
       </source>
       <source file="..\..\..\drv\cmsis_lib\include\stm32f4xx_tim.h" lastModified="149d18455e7">
          <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
@@ -140,10 +144,6 @@
       </source>
       <source file="..\..\..\drv\cmsis_lib\source\stm32f4xx_pwr.c" lastModified="149d17872ce">
          <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_pwr.h"/>
-         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\drv\cmsis_lib\source\stm32f4xx_adc.c" lastModified="149d177b583">
-         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_adc.h"/>
          <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
       <source file="..\..\..\app\app_AffDebug.h" lastModified="149d2cbd1d0">
@@ -174,11 +174,11 @@
       <source file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="149d177aa4a">
          <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\app\app_GestionOuverture.c" lastModified="149d259a8d5">
-         <include file="..\..\..\app\app_GestionOuverture.h"/>
-      </source>
       <source file="..\..\..\bsp\bsp_BoutonPoussoir.c" lastModified="149d23f0b65">
          <include file="..\..\..\bsp\bsp_BoutonPoussoir.h"/>
+      </source>
+      <source file="..\..\..\app\app_GestionOuverture.c" lastModified="149d259a8d5">
+         <include file="..\..\..\app\app_GestionOuverture.h"/>
       </source>
       <source file="..\..\..\drv\cmsis_lib\include\stm32f4xx_pwr.h" lastModified="149d17872b0">
          <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
@@ -187,9 +187,6 @@
          <include file="..\..\..\drv\drv_PWM.h"/>
          <include file="..\..\..\..\Rover_2014\util\util_TSW.h"/>
          <include file="..\..\..\..\Rover_2014\util\util_Console.h"/>
-      </source>
-      <source file="..\..\..\drv\drv_ADC.h" lastModified="149d3385c06">
-         <include file="..\..\..\bsp\bsp_carte.h"/>
       </source>
    </includePath>
 </dependencies>

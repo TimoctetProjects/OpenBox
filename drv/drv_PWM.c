@@ -259,7 +259,7 @@ PWM_Init(
 		uint32_t	Ratio_pr100	/**<[in] Ratio du signal PWM en % */
 ) {
 
-	uint32_t 	TIM_Periode 	= 1;	/** Periode de comptage du TimeBas */
+	uint32_t 	TIM_Periode 	= 1;	/** Periode de comptage du TimeBase */
 	uint32_t 	TIM_Prescaler 	= 1;	/** Prescaler du TimeBase */
 	uint32_t	SizeTimerMax	= 0;
 
@@ -315,15 +315,8 @@ PWM_Init(
 	TIM_Cmd( (TIM_TypeDef*) Mapping_GPIO[IdPinPwm].Periph, ENABLE );
 
 	if(Mapping_GPIO[IdPinPwm].EtatInit == ETAT_ACTIF) {
-
 		Pwm_Activer(IdPinPwm);
-
-	} else {
-		Pwm_Desactiver(IdPinPwm);
-		/*__SetRunningState(	PWM_Stopped,
-					Mapping_GPIO[IdPinPwm].Periph,
-					Mapping_GPIO[IdPinPwm].Parametre );*/
-	}
+	} else	Pwm_Desactiver(IdPinPwm);
 
 	return PWM_OK;
 }
@@ -392,22 +385,9 @@ TIM2_IRQHandler(
 ) {
 	Pwm_Desactiver(Pin_UltraSon_Trig);
 	TIM_ITConfig(TIM2, TIM_IT_CC4, DISABLE);
-
+	TIM_ITConfig(TIM3, TIM_IT_CC3, ENABLE);
 }
 
-void
-TIM3_IRQHandler(
-	void
-) {
-	asm("nop");
-}
-
-void
-TIM4_IRQHandler(
-	void
-) {
-	asm("nop");
-}
 
 /********************************************************************
  * Private Fonctions Definition

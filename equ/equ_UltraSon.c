@@ -19,10 +19,10 @@
 /********************************************************************
  * Private defines
  */
-#define ULTRASON_PERIODE_PWM_CLK_us		20
-#define ULTRASON_RATIO_PWM_CLK_pr100		50
+#define ULTRASON_PERIODE_PWM_CLK_us		40
+#define ULTRASON_RATIO_PWM_CLK_pr100		25
 
-#define ULTRASON_PERIODE_MESURE_ADC_ms		60
+#define ULTRASON_PERIODE_MESURE_ULTRASON_ms	60
 
 /********************************************************************
  * Private macros
@@ -97,7 +97,8 @@ UltraSon_main(
 		case UltraSon_Etape_main:
 						if(TSW_GetStatus(IDTSW_UltraSon_MesureEcho) == STATUS_FINIS) {
 							Pwm_Activer	(	UltraSon.ID_Pin_Trig		 );
-							TSW_Start(IDTSW_UltraSon_MesureEcho, ULTRASON_PERIODE_MESURE_ADC_ms);
+							TSW_Start(IDTSW_UltraSon_MesureEcho, ULTRASON_PERIODE_MESURE_ULTRASON_ms);
+
 						}
 			break;
 
@@ -118,6 +119,7 @@ UltraSon_toString(
 		Mapping_GPIO_e 			IDMapping,
 		uint8_t*			pString
 ) {
+	char	Value[10];
 
 	if(		IDMapping != UltraSon.ID_Pin_Echo
 		&& 	IDMapping != UltraSon.ID_Pin_Trig	)
@@ -133,7 +135,9 @@ UltraSon_toString(
 
 
 		case toString_GetValue:
-
+			snprintf(Value, 7, "%d", InputCapture_GetValue(IDMapping));
+			strncat(pString, Value, strlen(Value));
+			strncat(pString, " ms", strlen(" ms"));
 			break;
 	}
 }
@@ -165,13 +169,5 @@ static inline void
 UltraSon_InitEcho(
 	void
 ) {
-	ADC_ChannelConf_t ADC_Echo;
-
-	ADC_Echo.pinID 			= UltraSon.ID_Pin_Echo;
-	ADC_Echo.ConversionContinue	= 0;
-	ADC_Echo.LastValue_mV		= 0;
-	ADC_Echo.pStoreValue_mV		= &UltraSon.ValueEcho_mV;
-	ADC_Echo.pFct_CallbackEOC	= NULL;
-
-	UltraSon.IDADC_Channel = ADC_ChannelConfigure(ADC_Echo);
+	InputCapture_init(UltraSon.ID_Pin_Echo, 15000);
 }

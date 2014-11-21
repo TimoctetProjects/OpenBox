@@ -1,25 +1,23 @@
 /*********************************************************************
  * *******************************************************************
  *
- * @file	equ_UltraSon.h
+ * @file	drv_InputCapture.h
  *
  * @author	Duclos Timothe
  *
  * @date	21/11/2014
  *
- * @brief	Driver du module a ultrason
+ * @brief	Driver InputCapture
  *
  *********************************************************************/
 
-#ifndef EQU_ULTRASON_H
-#define EQU_ULTRASON_H
+#ifndef DRV_INPUTCAPTURE_H
+#define DRV_INPUTCAPTURE_H
 
 /********************************************************************
  * Includes
  */
-#include "drv_PWM.h"
-#include "util_TSW.h"
-#include "util_Console.h"
+#include "drv_TimBase.h"
 
 /********************************************************************
  * Exported defines
@@ -37,22 +35,15 @@
 /********************************************************************
  * Exported Function
  */
-/**-------------------------------------------------------------------
- *
- * @brief		Gestion du module a ultrason
- *
- */
-void
-UltraSon_main(
-	void
+uint8_t
+InputCapture_init(
+	Mapping_GPIO_e	IdPinIC,	/**<[in] ID de la Pin ou générer la PWM*/
+	uint32_t 	Periode_us	/**<[in] Periode de comptage */
 );
 
-void
-UltraSon_toString(
-
-		toString_Possibilities_e	Field,
-		Mapping_GPIO_e 			IDMapping,
-		uint8_t*			pString
+uint32_t
+InputCapture_GetValue(
+	Mapping_GPIO_e IdPinIC
 );
 
 #endif

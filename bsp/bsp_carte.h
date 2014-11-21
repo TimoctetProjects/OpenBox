@@ -27,7 +27,7 @@
 #include "misc.h"
 #include "core_cm4.h"
 #include "core_cmFunc.h"
-#include "stm32f4xx_adc.h"
+
 #include "stm32f4xx_tim.h"
 #include "stm32f4xx_gpio.h"
 #include "stm32f4xx_rcc.h"
@@ -174,7 +174,7 @@ const static Mapping_GPIO_s Mapping_GPIO[nb_GPIO] = {
 /** BTN_WKP			*/	{	GPIOA,		GPIO_Pin_0,		GPIO_Mode_IN,		FALSE,		GPIO_Speed_2MHz,		NULL,				GPIO_PuPd_NOPULL,		NULL,				NULL,			NULL,			ETAT_INACTIF,			NULL			},
 /** ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /** Pin_UltraSon_Trig  		*/	{ 	GPIOA,		GPIO_Pin_3,		GPIO_Mode_AF,		FALSE,		GPIO_Speed_50MHz,		GPIO_OType_PP,			GPIO_PuPd_NOPULL,		GPIO_AF_TIM2,			TIM_Channel_4,		Interrupt_ON,		ETAT_INACTIF,			(uint32_t) TIM2		},
-/** UltraSon_Echo		*/	{	GPIOC,		GPIO_Pin_1,		GPIO_Mode_AN,		FALSE,		GPIO_Speed_2MHz,		NULL,				GPIO_PuPd_NOPULL,		NULL,				ADC_Channel_11,		Interrupt_ON,		ETAT_INACTIF,			(uint32_t) ADC1		},
+/** UltraSon_Echo		*/	{	GPIOB,		GPIO_Pin_0,		GPIO_Mode_AF,		FALSE,		GPIO_Speed_50MHz,		GPIO_OType_PP,			GPIO_PuPd_NOPULL,		GPIO_AF_TIM3,			TIM_Channel_3,		Interrupt_ON,		ETAT_INACTIF,			(uint32_t) TIM3		},
 /** ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 };
 

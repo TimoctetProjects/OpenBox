@@ -36,7 +36,7 @@
  * Exported Function
  */
 void TimeBase_init(
-	Mapping_GPIO_e	IdPinPwm,			/**<[in] ID de la Pin ou générer la PWM*/
+	Mapping_GPIO_e	IdPinPwm,		/**<[in] ID de la Pin ou générer la PWM*/
 	uint32_t 	TIM_Periode,		/**<[in] Periode de comptage */
 	uint32_t 	TIM_Prescaler 		/**<[in] Prescaler du TimeBase */
 );

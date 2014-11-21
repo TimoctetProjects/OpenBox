@@ -34,7 +34,7 @@
  * Configuration des peripheriques
  */
 /** Mode debug */
-#define MODE_DEBUG_ON
+#define MODE_DEBUG_ON	1
 
 
 /*****************************************************************

@@ -74,13 +74,13 @@
     <Component id="502" name="PWR" path="" type="2"/>
     <Component id="504" name="GPIO" path="" type="2"/>
     <Component id="513" name="TIM" path="" type="2"/>
-    <Component id="514" name="ADC" path="" type="2"/>
     <Component id="517" name="USART" path="" type="2"/>
     <Component id="524" name="MISC" path="" type="2"/>
   </Components>
   <Files>
     <File name="drv/cmsis_boot/stm32f4xx_conf.h" path="drv/cmsis_boot/stm32f4xx_conf.h" type="1"/>
     <File name="util/util_Console.c" path="../Rover_2014/util/util_Console.c" type="1"/>
+    <File name="drv/drv_InputCapture.c" path="drv/drv_InputCapture.c" type="1"/>
     <File name="app" path="" type="2"/>
     <File name="drv/cmsis_boot/stm32f4xx.h" path="drv/cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="bsp/bsp_BoutonPoussoir.c" path="bsp/bsp_BoutonPoussoir.c" type="1"/>
@@ -88,7 +88,6 @@
     <File name="bsp/bsp_carte.h" path="bsp/bsp_carte.h" type="1"/>
     <File name="drv/cmsis/core_cm4.h" path="drv/cmsis/core_cm4.h" type="1"/>
     <File name="equ/equ_ServoDirection.c" path="equ/equ_ServoDirection.c" type="1"/>
-    <File name="drv/drv_ADC.h" path="drv/drv_ADC.h" type="1"/>
     <File name="drv/drv_PWM.h" path="drv/drv_PWM.h" type="1"/>
     <File name="equ/equ_UltraSon.c" path="equ/equ_UltraSon.c" type="1"/>
     <File name="util/util_Console.h" path="../Rover_2014/util/util_Console.h" type="1"/>
@@ -102,26 +101,24 @@
     <File name="app/app_AffDebug.c" path="app/app_AffDebug.c" type="1"/>
     <File name="util/util_TSW.c" path="../Rover_2014/util/util_TSW.c" type="1"/>
     <File name="bsp" path="" type="2"/>
+    <File name="drv/drv_InputCapture.h" path="drv/drv_InputCapture.h" type="1"/>
     <File name="bsp/bsp_carte.c" path="bsp/bsp_carte.c" type="1"/>
-    <File name="drv/cmsis_lib/source/stm32f4xx_adc.c" path="drv/cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
-    <File name="util/syscalls/syscalls.c" path="util/syscalls/syscalls.c" type="1"/>
-    <File name="equ/equ_ServoDirection.h" path="equ/equ_ServoDirection.h" type="1"/>
-    <File name="drv/cmsis/core_cmInstr.h" path="drv/cmsis/core_cmInstr.h" type="1"/>
     <File name="app/app_GestionOuverture.c" path="app/app_GestionOuverture.c" type="1"/>
+    <File name="equ/equ_ServoDirection.h" path="equ/equ_ServoDirection.h" type="1"/>
+    <File name="util/syscalls/syscalls.c" path="util/syscalls/syscalls.c" type="1"/>
+    <File name="drv/cmsis/core_cmInstr.h" path="drv/cmsis/core_cmInstr.h" type="1"/>
     <File name="drv/drv_TimBase.c" path="drv/drv_TimBase.c" type="1"/>
     <File name="drv/cmsis_lib/source/stm32f4xx_pwr.c" path="drv/cmsis_lib/source/stm32f4xx_pwr.c" type="1"/>
     <File name="drv/cmsis_boot/startup" path="" type="2"/>
     <File name="util" path="" type="2"/>
-    <File name="drv/drv_ADC.c" path="drv/drv_ADC.c" type="1"/>
     <File name="drv/cmsis_lib/source/misc.c" path="drv/cmsis_lib/source/misc.c" type="1"/>
     <File name="drv/cmsis_boot/startup/startup_stm32f4xx.c" path="drv/cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
     <File name="drv/cmsis_lib/source/stm32f4xx_usart.c" path="drv/cmsis_lib/source/stm32f4xx_usart.c" type="1"/>
     <File name="drv/cmsis_lib/include/stm32f4xx_pwr.h" path="drv/cmsis_lib/include/stm32f4xx_pwr.h" type="1"/>
-    <File name="drv/cmsis_lib/include/stm32f4xx_adc.h" path="drv/cmsis_lib/include/stm32f4xx_adc.h" type="1"/>
-    <File name="drv/cmsis_lib/include/misc.h" path="drv/cmsis_lib/include/misc.h" type="1"/>
     <File name="drv/drv_USART.h" path="drv/drv_USART.h" type="1"/>
-    <File name="drv/cmsis_boot/system_stm32f4xx.h" path="drv/cmsis_boot/system_stm32f4xx.h" type="1"/>
+    <File name="drv/cmsis_lib/include/misc.h" path="drv/cmsis_lib/include/misc.h" type="1"/>
     <File name="drv/cmsis_lib" path="" type="2"/>
+    <File name="drv/cmsis_boot/system_stm32f4xx.h" path="drv/cmsis_boot/system_stm32f4xx.h" type="1"/>
     <File name="drv/drv_PWM.c" path="drv/drv_PWM.c" type="1"/>
     <File name="equ" path="" type="2"/>
     <File name="app/main.c" path="app/main.c" type="1"/>
@@ -141,8 +138,8 @@
     <File name="equ/equ_UltraSon.h" path="equ/equ_UltraSon.h" type="1"/>
     <File name="bsp/config.h" path="bsp/config.h" type="1"/>
     <File name="drv/cmsis/core_cm4_simd.h" path="drv/cmsis/core_cm4_simd.h" type="1"/>
-    <File name="drv/cmsis_lib/include/stm32f4xx_usart.h" path="drv/cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
     <File name="app/app_GestionOuverture.h" path="app/app_GestionOuverture.h" type="1"/>
+    <File name="drv/cmsis_lib/include/stm32f4xx_usart.h" path="drv/cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
     <File name="drv/cmsis_lib/include/stm32f4xx_gpio.h" path="drv/cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
     <File name="bsp/bsp_BoutonPoussoir.h" path="bsp/bsp_BoutonPoussoir.h" type="1"/>
   </Files>

@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\workspace\OpenBox\drv\cmsis_boot /I..\..\..\workspace\OpenBox\app /I..\..\..\workspace\OpenBox /I..\..\..\workspace /I..\..\..\workspace\OpenBox\drv\cmsis_lib\include /I..\..\..\workspace\OpenBox\drv\cmsis_lib /I..\..\..\workspace\Rover_2014\util /I..\..\..\workspace\Rover_2014 /I..\..\..\workspace\OpenBox\drv\cmsis /I..\..\..\workspace\OpenBox\bsp /I..\..\..\workspace\OpenBox\drv /I..\..\..\workspace\OpenBox\equ">
+      <source file="..\..\..\drv\cmsis\core_cmInstr.h" lastModified="149d177ae28">
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\include\stm32f4xx_adc.h" lastModified="149d177b579">
+         <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\drv\drv_ADC.c" lastModified="1490ea4e8f6">
+         <include file="..\..\..\drv\drv_ADC.h"/>
+      </source>
+      <source file="..\..\..\equ\equ_ServoDirection.c" lastModified="1490eb46b64">
+         <include file="..\..\..\equ\equ_ServoDirection.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\include\misc.h" lastModified="149d178115e">
+         <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_boot\stm32f4xx.h" lastModified="149d177adb0">
+         <include file="..\..\..\drv\cmsis\core_cm4.h"/>
+         <include file="..\..\..\drv\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\drv\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\source\misc.c" lastModified="149d1781172">
+         <include file="..\..\..\drv\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\bsp\bsp_carte.h" lastModified="149d24310d4">
+         <include file="..\..\..\bsp\config.h"/>
+         <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\drv\cmsis\core_cm4.h"/>
+         <include file="..\..\..\drv\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_usart.h"/>
+      </source>
+      <source file="..\..\..\equ\equ_UltraSon.h" lastModified="149d258f80f">
+         <include file="..\..\..\drv\drv_PWM.h"/>
+         <include file="..\..\..\..\Rover_2014\util\util_TSW.h"/>
+         <include file="..\..\..\..\Rover_2014\util\util_Console.h"/>
+      </source>
+      <source file="..\..\..\bsp\bsp_carte.c" lastModified="1491f21146d">
+         <include file="..\..\..\bsp\bsp_carte.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\drv\drv_USART.h" lastModified="149235ef835">
+         <include file="..\..\..\bsp\bsp_carte.h"/>
+         <include file="..\..\..\..\Rover_2014\util\util_FIFO.h"/>
+      </source>
+      <source file="..\..\..\equ\equ_UltraSon.c" lastModified="149d255b59b">
+         <include file="..\..\..\equ\equ_UltraSon.h"/>
+      </source>
+      <source file="..\..\..\drv\drv_USART.c" lastModified="149d23c04d6">
+         <include file="..\..\..\drv\drv_USART.h"/>
+      </source>
+      <source file="..\..\..\drv\drv_GPIO.h" lastModified="148db3717f0">
+         <include file="..\..\..\bsp\bsp_carte.h"/>
+         <include file="..\..\..\..\Rover_2014\util\util_Console.h"/>
+      </source>
+      <source file="..\..\..\drv\drv_GPIO.c" lastModified="149d24af99b">
+         <include file="..\..\..\drv\drv_GPIO.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\include\stm32f4xx_usart.h" lastModified="149d1848d04">
+         <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="149d177a996">
+         <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis\core_cm4_simd.h" lastModified="149d177ae0a">
+      </source>
+      <source file="..\..\..\..\Rover_2014\util\util_Console.h" lastModified="149239d9bad">
+         <include file="..\..\..\bsp\bsp_carte.h"/>
+         <include file="..\..\..\..\Rover_2014\util\util_TSW.h"/>
+         <include file="..\..\..\drv\drv_USART.h"/>
+      </source>
+      <source file="..\..\..\util\stdio\printf.c" lastModified="149d248c0e5">
+         <include file="..\..\..\drv\drv_USART.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_boot\system_stm32f4xx.h" lastModified="149d177a9fa">
+      </source>
+      <source file="..\..\..\drv\drv_PWM.h" lastModified="148effcb98b">
+         <include file="..\..\..\bsp\bsp_carte.h"/>
+         <include file="..\..\..\..\Rover_2014\util\util_Console.h"/>
+      </source>
+      <source file="..\..\..\util\syscalls\syscalls.c" lastModified="149d1780356">
+      </source>
+      <source file="..\..\..\..\Rover_2014\util\util_Console.c" lastModified="149d23c7d63">
+         <include file="..\..\..\..\Rover_2014\util\util_Console.h"/>
+      </source>
+      <source file="..\..\..\..\Rover_2014\util\util_TSW.h" lastModified="1491ff8962c">
+         <include file="..\..\..\bsp\bsp_carte.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\source\stm32f4xx_tim.c" lastModified="149d18455f3">
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_boot\system_stm32f4xx.c" lastModified="149d177a9f0">
+         <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\drv\drv_PWM.c" lastModified="14923863e92">
+         <include file="..\..\..\drv\drv_PWM.h"/>
+      </source>
+      <source file="..\..\..\..\Rover_2014\util\util_TSW.c" lastModified="148ff0300fa">
+         <include file="..\..\..\..\Rover_2014\util\util_TSW.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\source\stm32f4xx_usart.c" lastModified="149d1848d06">
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\Rover_2014\util\util_FIFO.h" lastModified="1491f2fd485">
+         <include file="..\..\..\bsp\bsp_carte.h"/>
+      </source>
+      <source file="..\..\..\bsp\config.h" lastModified="149d255b581">
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\include\stm32f4xx_tim.h" lastModified="149d18455e7">
+         <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="149d177a9a0">
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="149d177a9b4">
+      </source>
+      <source file="..\..\..\drv\cmsis_boot\stm32f4xx_conf.h" lastModified="149d177f414">
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_pwr.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="149d177aa54">
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\source\stm32f4xx_pwr.c" lastModified="149d17872ce">
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_pwr.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\source\stm32f4xx_adc.c" lastModified="149d177b583">
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\app\app_AffDebug.h" lastModified="149d1872db6">
+         <include file="..\..\..\..\Rover_2014\util\util_TSW.h"/>
+         <include file="..\..\..\bsp\bsp_BoutonPoussoir.h"/>
+         <include file="..\..\..\equ\equ_ServoDirection.h"/>
+         <include file="..\..\..\bsp\config.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis\core_cmFunc.h" lastModified="149d177ae1e">
+      </source>
+      <source file="..\..\..\drv\cmsis\core_cm4.h" lastModified="149d177ae00">
+         <include file="..\..\..\drv\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\drv\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\drv\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\app\app_AffDebug.c" lastModified="149d24b8bff">
+         <include file="..\..\..\app\app_AffDebug.h"/>
+      </source>
+      <source file="..\..\..\app\app_GestionOuverture.h" lastModified="149d258f83f">
+         <include file="..\..\..\equ\equ_ServoDirection.h"/>
+         <include file="..\..\..\equ\equ_UltraSon.h"/>
+      </source>
+      <source file="..\..\..\bsp\bsp_BoutonPoussoir.h" lastModified="149d23f098c">
+         <include file="..\..\..\drv\drv_GPIO.h"/>
+         <include file="..\..\..\..\Rover_2014\util\util_Console.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="149d177aa4a">
+         <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\app\app_GestionOuverture.c" lastModified="149d258f84c">
+         <include file="..\..\..\app\app_GestionOuverture.h"/>
+      </source>
+      <source file="..\..\..\bsp\bsp_BoutonPoussoir.c" lastModified="149d23f0b65">
+         <include file="..\..\..\bsp\bsp_BoutonPoussoir.h"/>
+      </source>
+      <source file="..\..\..\drv\cmsis_lib\include\stm32f4xx_pwr.h" lastModified="149d17872b0">
+         <include file="..\..\..\drv\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\drv\drv_ADC.h" lastModified="148f0660769">
+         <include file="..\..\..\bsp\bsp_carte.h"/>
+      </source>
+      <source file="..\..\..\equ\equ_ServoDirection.h" lastModified="149d2567dd6">
+         <include file="..\..\..\drv\drv_PWM.h"/>
+         <include file="..\..\..\..\Rover_2014\util\util_TSW.h"/>
+         <include file="..\..\..\..\Rover_2014\util\util_Console.h"/>
+      </source>
+   </includePath>
+</dependencies>
